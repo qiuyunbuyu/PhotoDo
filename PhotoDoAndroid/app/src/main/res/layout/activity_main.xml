@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.yqy.photodo.MainActivity">
+    <!--顶部栏-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/top_bg_color"
+        android:layout_height="@dimen/title_bar_height">
+        <TextView
+            android:id="@+id/title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PhotoDO"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title_main_text_size" />
+    </RelativeLayout>
+
+    <!--内容-->
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <!--底部按钮-->
+    <View  android:layout_height="8px"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        />
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="bottom"
+        android:layout_height="wrap_content">
+
+        <!-- 下部的图标点击会需要两张图片切换，字体的颜色也会切换 -->
+        <RadioButton
+            android:id="@+id/handle_rb"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="识别"
+            android:drawableTop="@drawable/rb_home"
+            android:button="@null"
+            android:gravity="center"
+            android:drawablePadding="3dp"
+            android:textColor="@color/bottom_rb_text_color"
+            android:layout_height="wrap_content"
+            android:checked="true" />
+        <RadioButton
+            android:id="@+id/storge_rb"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="更多功能"
+            android:drawableTop="@drawable/rb_rim"
+            android:button="@null"
+            android:gravity="center"
+            android:drawablePadding="3dp"
+            android:textColor="@color/bottom_rb_text_color"
+            android:layout_height="wrap_content"
+            android:checked="false" />
+        <RadioButton
+            android:id="@+id/center_rb"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="个人中心"
+            android:drawableTop="@drawable/rb_center"
+            android:button="@null"
+            android:gravity="center"
+            android:drawablePadding="3dp"
+            android:textColor="@color/bottom_rb_text_color"
+            android:layout_height="wrap_content"
+            android:checked="false" />
+    </RadioGroup>
+
+</LinearLayout>

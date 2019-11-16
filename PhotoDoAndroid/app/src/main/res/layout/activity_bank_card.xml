@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/root_bg_color"
+    tools:context="com.yqy.photodo.FacePhotoHandle.DetectPhotoActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical" >
+            <!--顶部栏-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="@color/top_bg_color"
+                android:layout_height="@dimen/title_bar_height">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BankCard"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/title_main_text_size" />
+                <TextView
+                    android:id="@+id/choose_bank_tv"
+                    android:layout_width="wrap_content"
+                    android:padding="10dp"
+                    android:text="选择图片"
+                    android:textSize="14dp"
+                    android:textColor="@color/white"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <!--检测图片-->
+            <ImageView
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/bankcard_img"
+                android:layout_width="match_parent"
+                android:layout_height="160dp" />
+            <View  android:layout_height="8px"
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:padding="10dp"
+                android:text="银行卡"
+                android:drawableLeft="@drawable/orccard"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:drawablePadding="5dp"
+                android:textColor="@color/title_black"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/bankcard_name_tv"
+                android:layout_marginTop="1dp"
+                android:layout_width="match_parent"
+                android:padding="10dp"
+                android:text="姓名:"
+                android:drawableLeft="@drawable/orccard"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:drawablePadding="5dp"
+                android:textColor="@color/title_black"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/bankcard_number_tv"
+                android:layout_marginTop="1dp"
+                android:layout_width="match_parent"
+                android:padding="10dp"
+                android:text="姓名:"
+                android:drawableLeft="@drawable/orccard"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:drawablePadding="5dp"
+                android:textColor="@color/title_black"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

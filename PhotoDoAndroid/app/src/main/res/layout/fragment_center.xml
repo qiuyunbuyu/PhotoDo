@@ -1,0 +1,104 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.yqy.photodo.fragment.HandleFragment">
+    <LinearLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/root_bg_color"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/user_login_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/top_bg_color"
+            android:drawableLeft="@drawable/default_head"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:padding="20dp"
+            android:text="登录/注册"
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            android:id="@+id/user_logined_ll"
+            android:visibility="gone"
+            android:background="@color/top_bg_color"
+            android:layout_width="match_parent"
+            android:padding="20dp"
+            android:gravity="center_vertical"
+            android:layout_height="wrap_content">
+
+            <com.yqy.photodo.ui.RoundImageView
+                android:id="@+id/user_head_iv"
+                android:src="@drawable/login_head"
+                android:layout_width="60dp"
+                android:layout_height="60dp" />
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/user_name_tv"
+                    android:layout_width="wrap_content"
+                    android:text="用户名"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/user_location_tv"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:text="测试地址"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:background="@drawable/white_code"-->
+                <!--android:layout_height="wrap_content" />-->
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/user_exit_login"
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:layout_marginTop="30dp"
+            android:text="退出登录"
+            android:drawableLeft="@drawable/common_problem"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:drawablePadding="10dp"
+            android:drawableRight="@drawable/right_arrow"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/to_facestorege"
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:layout_marginTop="1dp"
+            android:text="查看人脸库"
+            android:drawableLeft="@drawable/common_problem"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:drawablePadding="10dp"
+            android:drawableRight="@drawable/right_arrow"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:layout_marginTop="1dp"
+            android:text="待续"
+            android:drawableLeft="@drawable/common_problem"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:drawablePadding="10dp"
+            android:drawableRight="@drawable/right_arrow"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</ScrollView>

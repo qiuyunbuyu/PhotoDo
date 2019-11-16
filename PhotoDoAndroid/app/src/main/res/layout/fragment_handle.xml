@@ -1,0 +1,131 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/root_bg_color"
+    tools:context="com.yqy.photodo.fragment.HandleFragment">
+
+    <ScrollView
+        android:id="@+id/root_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical" >
+            <TextView
+                style="@style/width_match_height_wrap"
+                android:layout_gravity="center_vertical"
+                android:background="@color/white"
+                android:drawableLeft="@drawable/icon_line"
+                android:drawablePadding="8dp"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:text="人脸识别"
+                android:textColor="@color/title_black"
+                android:textSize="14sp" />
+            <!--人脸识别-->
+            <LinearLayout
+                android:layout_marginTop="1dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <!--人脸检测-->
+                <LinearLayout
+                    android:id="@+id/detect_view"
+                    style="@style/height_wrap_width_weight"
+                    android:layout_alignParentRight="true"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+                    android:background="@color/white"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+                    <ImageView
+                        style="@style/wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/detect_icon" />
+                    <TextView
+                        style="@style/wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="Detect API"
+                        android:textColor="@color/title_black"
+                        android:textSize="14sp" />
+                    <TextView
+                        style="@style/width_match_height_wrap"
+                        android:layout_margin="10dp"
+                        android:gravity="center"
+                        android:maxLines="2"
+                        android:text="检测图片中的人脸"
+                        android:textColor="#B4B4B4"
+                        android:textSize="10dp" />
+                </LinearLayout>
+                <!--人脸对比-->
+                <LinearLayout
+                    android:id="@+id/compare_view"
+                    style="@style/height_wrap_width_weight"
+                    android:layout_alignParentRight="true"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+                    android:background="@color/white"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+                    <ImageView
+                        style="@style/wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/compare_icon" />
+                    <TextView
+                        style="@style/wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="Compare API"
+                        android:textColor="@color/title_black"
+                        android:textSize="14sp" />
+                    <TextView
+                        style="@style/width_match_height_wrap"
+                        android:layout_margin="10dp"
+                        android:gravity="center"
+                        android:maxLines="2"
+                        android:text="人脸检索"
+                        android:textColor="#B4B4B4"
+                        android:textSize="10dp" />
+                </LinearLayout>
+                <!--识别面部五官属性-->
+                <LinearLayout
+                    android:id="@+id/feature_view"
+                    style="@style/height_wrap_width_weight"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="1dp"
+                    android:background="@color/white"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+                    <ImageView
+                        style="@style/wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/features_icon" />
+                    <TextView
+                        style="@style/wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="Facialfeatures"
+                        android:textColor="@color/title_black"
+                        android:textSize="14sp" />
+                    <TextView
+                        style="@style/width_match_height_wrap"
+                        android:layout_margin="5dp"
+                        android:gravity="center"
+                        android:lines="2"
+                        android:text="识别面部五官属性"
+                        android:textColor="#B4B4B4"
+                        android:textSize="10dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
