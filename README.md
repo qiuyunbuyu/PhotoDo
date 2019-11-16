@@ -67,7 +67,7 @@
     * 返回值:
         * face_added,face_count,failure_detail
     * 对应页面：FaceStorgeActivity
-    * ![avatar](./项目截图/FaceStorgeActivity.jpg ){:height="100" width="100"}
+    * ![avatar](./项目截图/FaceStorgeActivity.jpg ){:height="50px" width="50px"}
 ##### 其他页面
 * 欢迎页
     * 功能描述：显示项目相关信息
