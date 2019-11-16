@@ -67,6 +67,7 @@
     * 返回值:
         * face_added,face_count,failure_detail
     * 对应页面：FaceStorgeActivity
+    * ![avatar](./项目截图/FaceStorgeActivity.jpg)
 ##### 其他页面
 * 欢迎页
     * 功能描述：显示项目相关信息
@@ -74,6 +75,7 @@
 * 主页面
     * 功能描述：由三个Fragment组成项目整体页面，架构
     * 对应页面：人脸识别 HandleFragment
+    * 
     * 对应页面：图形识别 StorgeFragment
     * 对应页面：用户中心 CentreFragment
 
